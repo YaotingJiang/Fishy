@@ -1,0 +1,36 @@
+					Design 
+
+Fish Class: 
+There are two constructors in Fish Class, the first one is for the player fish and the second one is for the background fish. 
+There are 8 methods in Fish Class: 
+moveFish(String), helps to move this fish to a new position by a given key
+image(), helps to draw the player fish
+imageFishes(background), helps to draw the background fish.
+loopPlayerBack(), helps to move the player fish’s position if it’s out of bounds. 
+loopBack(), helps to move the background fish’s position if it’s out of bounds. 
+isBiggerThanAndOverlay(Fish), helps to check check if this fish touched that fish and if this fish is bigger than that fish
+isSmallerThanAndOverlay(Fish), helps to check check if this fish touched that fish and if this fish is bigger than that fish
+grow(), helps to grow the radius of the player fish if it eats a smaller fish
+
+Interface ILoFish: represent a list of fish
+MtLoFish: represent a list of empty fish
+ILoFish : represent a list of fish
+They all have 10 following methods: 
+size(), helps to check the size of the list of fishes
+image(WorldScene), helps to draw a list of background fish on world
+moveFish(), helps to move the background fishes by changing position x
+makeFishes(), helps to randomly generate a list of fishes
+getpos(), helps to check if the position of the list of fish in the range from 0 to 500
+loopBack(), helps to move a list of background fish’s position if they are out of bounds
+generateNewList(Fish), helps to generate a new list of background fishes, if the player fish eats a smaller fish
+isBiggerThanHelper(Fish), helps to check if this fish touched that fish and if this fish is bigger than that fish
+isSmallerThanHelper(Fish), helps to check if this fish touched that fish and if this fish is smaller than that fish,
+maxSize(), helps to determine the largest fish by checking its radius
+
+FishyWorld class 
+It presents a game world
+makeScene(), helps to produce the image of this world by adding the fish to the background image
+onKeyEvent(String), helps to move the fish when the player presses a key
+onTick(), helps to generates a world at every tick 
+lastScene(String), helps to produce the last image of this world by adding text to the image
+worldEnds(), helps to determine when to end the game

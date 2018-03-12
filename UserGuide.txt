@@ -1,0 +1,6 @@
+
+		                     UserGuide
+1. The player fish is a blue solid circle.
+2. You can move the player fish by pressing the direction keys(up, down, left and right).
+3. If you eat a smaller fish, then the player fish will grow by adding 5 to its radius.
+4. The game ends once the player fish becomes to the largest fish in the pool or the player fish is eaten by a larger fish. 
